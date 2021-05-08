@@ -8,3 +8,9 @@ let sumaDigitos n =
 	List.map string sts|> String.concat "+"
 	|> fun s -> printfn "%s = %A" s res
 	res
+
+let persAditiva n =
+	let rec loop n veces =
+		if n < 10I then veces
+		else loop (sumaDigitos n) (veces + 1)
+	loop (System.Numerics.BigInteger.Parse(n.ToString())) 0
