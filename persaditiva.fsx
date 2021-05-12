@@ -15,4 +15,4 @@ let persAditiva n =
         else loop (sumaDigitos n) (veces + 1)
     loop (System.Numerics.BigInteger.Parse(n.ToString())) 0
 
-persAditiva 4567891234;
+persAditiva 12344562323232343I;
